@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* _____________________CONTAINER RIGHT_________________________ */
+.container-right {
+    width: 45vw;
+    height: 100vh;
+
+}
+
+.yellowbox {
+    width: 500px;
+    height: 2vh;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+}
+
+.container-right img {
+    width: 535px;
+    height: 804px;
+    position: static;
+    margin: 100px;
+}
+
+/* _____________________CONTAINER LEFT_________________________ */
+.container-left {
+    width: 55vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp-div {
+    height: 15vh;
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    left: 50px;
+    top: 50px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.circle img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* __________________________________FORM____________________ */
+.form-div {
+    height: 65vh;
+
+    text-align: right;
+    direction: rtl;
+    margin-top: 100px;
+}
+
+.form-div h1 {
+    text-align: right;
+    font: normal normal 900 66px/97px Heebo;
+    letter-spacing: 0px;
+    color: #FDBD03;
+}
+
+.form-div p {
+    text-align: right;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    direction: rtl;
+    width: 385px;
+
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-one {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.div-two {
+
+    margin-top: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+}
+
+.form-control input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border-style: none;
+    border-bottom: 3px solid #FDBD03;
+}
+
+.div-two .form-control input {
+    width: 854px;
+    height: 143px;
+}
+
+.form-control button {
+    width: 166px;
+    height: 50px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #000000;
+    border: none;
+}
+
+.apps-div {
+    height: 18vh;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.yellowboxbottom {
+    background-color: #FDBD03;
+    height: 2vh;
+    width: 55vw;
+    position: fixed;
+    left: 1px;
+    bottom: 1px;
+
+}
+
+@media (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whatsapp-div {
+        display: none;
+    }
+
+    .container-right {
+        height: 20vh;
+    }
+
+    .container-right img {
+        width: 79px;
+        height: 119px;
+        top: 5%;
+        left: 43%;
+        margin: auto;
+        position: fixed;
+    }
+
+    .container-left {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .form-div {
+        margin: auto;
+    }
+
+    .form-div h1 {
+        height: 59px;
+        text-align: center;
+        font: normal normal 900 40px/59px Heebo;
+    }
+
+    .form-div p {
+        width: 293px;
+        height: 56px;
+        text-align: center;
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .div-one {
+        flex-direction: column;
+    }
+
+    .form-control label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+
+    .form-control input {
+        width: 309px;
+        height: 37px;
+    }
+
+    .div-two .form-control input {
+        width: 309px;
+        height: 106px;
+    }
+
+    .form-control button {
+        width: 310px;
+        height: 37px;
+    }
+
+    .circle {
+        width: 45px;
+        height: 46px;
+    }
+
+    .apps-div {
+        gap: 45px;
+        padding-top: 20px;
+        width: 100vw;
+    }
+
+    .yellowboxbottom {
+        width: 100vw;
+    }
+}

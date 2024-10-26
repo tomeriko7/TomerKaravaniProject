@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-img {
+    background-image: url(images/Path\ 15@2x.png);
+    width: 100vw;
+    height: 55vh;
+    background-size: cover;
+}
+
+.container-form {
+    width: 569px;
+    height: 800px;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: 57%;
+    top: 20%;
+    text-align: center;
+
+}
+
+.container-form h1 {
+    text-align: center;
+    font: normal normal 900 36px/53px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 50px 70px;
+
+}
+
+.container-form p {
+    text-align: center;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    padding: 0 70px;
+    direction: rtl;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+    direction: rtl;
+    padding: 10px 70px;
+    margin-top: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.form-control label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+.form-control input {
+
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+
+}
+
+.form-control button {
+    width: 166px;
+    height: 50px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .container-img {
+        background-image: url(images/Path\ 15.png);
+        width: 100vw;
+        height: 35vh;
+        background-size: cover;
+    }
+
+    .form {
+        padding: 10px 20px;
+    }
+
+    .container-form {
+        width: 350px;
+        height: 550px;
+
+        left: 13%;
+        top: 20%;
+    }
+
+    .container-form h1 {
+        font: normal normal 900 25px/30px Heebo;
+        padding: 40px 20px 10px;
+    }
+
+
+    .container-form p {
+        font: normal normal normal 15px/22px Heebo;
+        padding: 0px 30px;
+    }
+
+    .form-control {
+        margin: auto;
+    }
+
+    .form-control label {
+        font: normal normal bold 14px/21px Heebo;
+
+    }
+
+    .form-control input {
+        width: 230px;
+        height: 28px;
+
+    }
+
+    .form-control button {
+        width: 76px;
+        height: 33px;
+        font: normal normal bold 15px/20px Heebo;
+
+    }
+
+}

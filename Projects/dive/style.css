@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/newdiver.jpg");
+    background-size: cover;
+
+
+
+}
+
+h1 {
+    font-size: 90px;
+    color: #ffd700ad;
+    text-align: center;
+    text-shadow: 20px -10px 15px #00000045;
+    direction: rtl;
+    font-family: "Assistant", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 330px;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+    direction: ltr;
+    color: honeydew;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    height: 1200px;
+
+}
+
+.divtext {
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    padding: 50px 50px;
+    align-content: center;
+    border: 5px solid #e3dcb6;
+    border-radius: 100%;
+    background-image: url(images/pexels-photo-9808210.webp);
+    background-size: cover;
+    box-shadow: -10px 10px 20px steelblue;
+    margin: 20px 100px;
+    overflow: hidden;
+    direction: rtl;
+
+
+
+}
+
+.divtext h3 {
+    font-size: 25px;
+    color: beige;
+    text-shadow: 20px -10px 15px #000000d9;
+}
+
+.divtext p {
+    font-size: 20px;
+    color: beige;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000000ad, 0 0 5px #000;
+}
+
+
+.divform {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 50px 50px;
+    align-content: center;
+    border: 3px solid #e3dcb6;
+    border-radius: 100%;
+    background-image: url(images/turtle.jpg);
+    background-size: cover;
+    box-shadow: -10px 10px 20px steelblue;
+    margin: 20px 500px;
+    overflow: hidden;
+
+}
+
+.divform h3 {
+    font-size: 20px;
+    color: #ffd700ad;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    margin: auto;
+
+}
+
+.form .form-control {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000000ad, 0 0 5px #000;
+}
+
+.form .form-control input[type=text] {
+    border: 1px solid beige;
+    background: transparent;
+    border-radius: 5px;
+    color: beige;
+    font-size: 16px;
+    text-align: right;
+    direction: rtl;
+}
+
+.form .form-control button {
+    width: 100px;
+    margin: 10px auto;
+    background-color: #ffd700ad;
+    border: none;
+    border-radius: 5px;
+}
+
+.form .form-control:hover button {
+    width: 100px;
+    margin: 10px auto;
+    background-color: #ebe2aead;
+    border: none;
+}
+
+@media (max-width:576px) {
+    h1 {
+        font-size: 35px;
+        margin: 40px auto;
+        width: 265px;
+        position: static;
+    }
+
+    .divtext {
+        width: 400px;
+        height: 400px;
+        margin: 10px auto;
+    }
+
+    .divtext h3 {
+        font-size: 20px;
+    }
+
+    .divtext p {
+        font-size: 15px;
+    }
+
+    .divform {
+        width: 350px;
+        height: 350px;
+        margin: 20px auto;
+    }
+
+
+}

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    direction: rtl;
+}
+
+.container {
+    width: 100vw;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.container h1 {
+    text-align: left;
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    opacity: 1;
+}
+
+.container h5 {
+    text-align: right;
+    font: normal normal normal 32px/38px Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.container p {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+form {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-control label {
+    text-align: right;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+
+}
+
+.form-control input {
+    width: 418px;
+    height: 50px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+
+}
+
+.form-control button {
+    width: 206px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+
+    border: none;
+    margin-top: 20px;
+}
+
+@media (max-width:576px) {
+    .container {
+        padding-top: 100px;
+        height: 60vh;
+    }
+
+    .container h1 {
+        width: 328px;
+        height: 93px;
+        text-align: center;
+        font: normal normal normal 60px/86px Satisfy;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 36px #00000087;
+
+    }
+
+    .container h5 {
+        width: 298px;
+        height: 22px;
+        text-align: right;
+        font: normal normal normal 18px/22px Varela Round;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    .container p {
+        width: 318px;
+        height: 120px;
+        text-align: center;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+    }
+
+    form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+
+    }
+
+    .form-control label {
+
+        text-align: right;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+
+    }
+
+    .form-control input {
+        width: 302px;
+        height: 36px;
+
+    }
+
+    .form-control button {
+        width: 300px;
+        height: 33px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+    }
+}

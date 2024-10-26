@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.generalcontainer {
+    background-image: url("images/flower-5093757.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+
+
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #bebebe;
+    font-size: 60px;
+    text-align: center;
+    direction: rtl;
+    padding: 30px;
+    text-shadow: 2px 2px rgb(98, 98, 0);
+}
+
+
+
+.container-form {
+    width: 500px;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    left: 7%;
+    top: 11%;
+    text-align: center;
+    border-radius: 40px 40px 0px 0px;
+
+}
+
+.container-form h2 {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 0px;
+    color: #99b143;
+    ;
+    padding: 50px 70px;
+
+}
+
+.container-form p {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    padding: 0 70px;
+    direction: rtl;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+    direction: rtl;
+    padding: 10px 70px;
+    margin-top: 20px;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.form-control label {
+    text-align: right;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+.form-control input {
+
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #99b143;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+
+}
+
+.form-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.heart {
+    width: 70px;
+    height: 70px;
+    background: #870042;
+    color: #FFFFFF;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #870042;
+    animation: heart 2s linear infinite;
+
+
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #870042;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #870042;
+
+}
+
+
+.heart:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #870042;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #870042;
+
+}
+
+.form-control-pick {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    gap: 20px;
+    font-size: 13px;
+}
+
+
+.form button {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    color: #FFFFFF;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 2;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 0px;
+    left: -5px;
+    top: -24px;
+    border-radius: 25px;
+    border: none;
+
+}
+
+.heart :hover {
+
+    color: #99b143;
+}
+
+
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+
+
+
+    .form {
+        padding: 10px 20px;
+    }
+
+    .container-form {
+        width: 400px;
+        height: 850px;
+    }
+
+    .container-form h2 {
+        font-family: "Varela Round", sans-serif;
+        padding: 40px 50px 10px;
+    }
+
+
+    .container-form p {
+        font-family: "Varela Round", sans-serif;
+        padding: 0px 30px;
+    }
+
+    .form-control {
+        margin: auto;
+    }
+
+    .form-control label {
+        font-family: "Varela Round", sans-serif;
+        text-align: right;
+        padding-bottom: 10px;
+
+    }
+
+    .form-control input {
+        width: 230px;
+        height: 28px;
+
+    }
+
+    .form-control button {
+        width: 76px;
+        height: 33px;
+        font-family: "Varela Round", sans-serif;
+
+    }
+
+    .form-control-pick {
+        gap: 20px;
+        font-size: 14px;
+    }
+}

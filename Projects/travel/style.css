@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #E5EEFF;
+    display: flex;
+
+
+}
+
+.container {
+    margin: 20vh auto;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(6, 300px);
+    column-gap: 25px;
+
+}
+
+.box {
+    width: 295px;
+    height: 270px;
+
+}
+
+.blue-box {
+    background-color: #020253;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    height: 570px;
+    padding: 200px 70px;
+
+
+}
+
+.blue-box h1 {
+    text-align: center;
+    font: normal normal bold 61px/80px Assistant;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+
+}
+
+.blue-box p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    direction: rtl;
+
+}
+
+.purple-box {
+    background-color: #8E097C;
+    grid-column: 1/3;
+    grid-row: 4/7;
+    height: 870px;
+}
+
+.formtopdiv {
+    height: 30%;
+    padding-top: 70px;
+}
+
+.purple-box .formtopdiv h1 {
+    text-align: center;
+    font: normal normal bold 35px/46px Assistant;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.purple-box .formtopdiv p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    direction: rtl;
+    width: 500px;
+    margin: auto;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+
+}
+
+.form-control input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    width: 500px;
+    height: 60px;
+    text-align: right;
+    border-style: none;
+    border-bottom: 4px solid #0EE1DA;
+    background-color: #E5EEFF;
+}
+
+.form-control button {
+    width: 501px;
+    height: 60px;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+    border: none;
+    margin-top: 20px;
+}
+
+.formbottomdiv .form-control input {
+    width: 500px;
+    height: 172px;
+}
+
+/* _____________________________________תמונות__________________________________ */
+.box1 {
+    background-image: url(images/island.png);
+    background-size: contain;
+}
+
+.box2 {
+    background-image: url(images/twowoman.png);
+    background-size: contain;
+}
+
+.box3 {
+    background-image: url(images/sea.png.);
+    background-size: contain;
+}
+
+.box4 {
+    background-image: url(images/cow.png.);
+    background-size: contain;
+}
+
+.box5 {
+    background-image: url(images/view.png);
+    background-size: contain;
+}
+
+.box6 {
+    background-image: url(images/flag.png);
+    background-size: contain;
+}
+
+.box7 {
+    background-image: url(images/sun.png);
+    background-size: contain;
+}
+
+.box8 {
+    background-image: url(images/forest.png);
+    background-size: contain;
+}
+
+.box9 {
+    background-image: url(images/monkey.png);
+    background-size: contain;
+}
+
+.box10 {
+    background-image: url(images/india.png);
+    background-size: contain;
+}
+
+.box11 {
+    background-image: url(images/rise.png);
+    background-size: contain;
+}
+
+.box12 {
+    background-image: url(images/train.png);
+    background-size: contain;
+}
+
+.box13 {
+    background-image: url(images/grass.png);
+    background-size: contain;
+}
+
+.box14 {
+    background-image: url(images/boat.png);
+    background-size: contain;
+}
+
+@media (max-width:576px) {
+
+    .container {
+        margin: 20vh auto;
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(12, 170px);
+        row-gap: 10px;
+
+
+    }
+
+    .box {
+        width: 159px;
+        height: 146px;
+
+    }
+
+    .blue-box {
+        background-color: #020253;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        height: 305px;
+        padding: 50px 16px;
+
+
+    }
+
+    .blue-box h1 {
+        text-align: center;
+        font: normal normal bold 36px/47px Assistant;
+        letter-spacing: 0px;
+        color: #0EE1DA;
+    }
+
+    .blue-box p {
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+    }
+
+
+    .purple-box {
+        background-color: #8E097C;
+        grid-column: 1/3;
+        grid-row: 7/10;
+        width: 360px;
+        height: 518px;
+    }
+
+    .purple-box .formtopdiv h1 {
+        text-align: center;
+        font: normal normal bold 25px/33px Assistant;
+        width: 278px;
+        margin: auto;
+    }
+
+    .purple-box .formtopdiv p {
+        font: normal normal normal 17px/26px Assistant;
+        width: 278px;
+
+    }
+
+    .formtopdiv {
+        padding: 20px 10px;
+    }
+
+    .form {
+        padding-top: 40px
+    }
+
+    .form-control label {
+        font: normal normal bold 7px/10px Heebo;
+
+    }
+
+    .form-control input {
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        width: 278px;
+        height: 33px;
+        text-align: right;
+        border-style: none;
+        border-bottom: 4px solid #0EE1DA;
+        background-color: #E5EEFF;
+    }
+
+    .form-control button {
+        width: 278px;
+        height: 33px;
+    }
+
+    .formbottomdiv .form-control input {
+        width: 278px;
+        height: 96px;
+    }
+}
