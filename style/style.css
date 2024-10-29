@@ -1,0 +1,585 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ______________________________________HEADER__________________________________ */
+
+        /* ______________________________HEADER דיב________________________ */
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        header {
+            width: 100vw;
+            height: 100px;
+            position: fixed;
+
+
+
+        }
+
+        /* ________סרגל ניווט_______________ */
+        nav {
+            height: 100px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            margin: 0 auto;
+            background-color: rgba(30, 30, 30, 0.3);
+            ;
+            padding-left: 20px;
+            padding-top: 20px;
+
+        }
+
+        /* ________________המבורגר________________ */
+        #hamburger {
+
+            display: none;
+        }
+
+        /* __________רשימת פריטים לסרגל ________________*/
+        nav ul {
+            list-style-type: none;
+            direction: rtl;
+            display: flex;
+
+
+        }
+
+        nav ul li {
+            float: left;
+
+
+
+        }
+
+        /* __________ לינק אייטם בודד____________*/
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-size: 15pt;
+            color: honeydew;
+            line-height: 2;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* _________ מעבר על לינק אייטם____________*/
+        nav ul li a:hover {
+            color: goldenrod;
+        }
+
+        /* ___________________לוגו בסרגל ניווט _____________ */
+        .logo {
+            width: 62px;
+            height: 62px;
+            border-radius: 31px;
+
+        }
+
+        .logoname {
+            color: honeydew;
+            line-height: 50px;
+
+            left: 200px;
+            font-family: "Poppins", sans-serif;
+            font-size: 20pt;
+        }
+
+        @media (max-width:576px) {
+
+
+            .logo {
+                display: none;
+            }
+
+            .logoname {
+                position: fixed;
+            }
+
+            #hamburger {
+                display: block;
+                color: honeydew;
+                font-size: 3rem;
+                font-weight: bolder;
+                position: fixed;
+                left: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 82px;
+                background-color: rgba(30, 30, 30, 0.3);
+                display: none;
+                position: fixed;
+                left: 0;
+
+            }
+
+            nav ul li a {
+                border-bottom: 3px solid transparent;
+                width: 100vw;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            #hamburger:hover+ul {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        /* _______________________________________HEADER_________________________________ */
+
+
+        /* ____________________________________MAIN_________________________________ */
+
+
+
+        main {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ___________________________________HOME______________________________ */
+
+        /* ____________________________HOME דיב______________________________ */
+        #home {
+            width: 100vw;
+            height: 1200px;
+            background-image: url('../images/homebackground.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: honeydew;
+            font-size: 30pt;
+            padding-left: 100px;
+            padding-top: 150px;
+            font-family: "Poppins", sans-serif;
+            text-align: left;
+        }
+
+
+
+        #home h1 {
+            color: goldenrod;
+
+        }
+
+
+
+        #home h3 {
+            color: rgb(0, 160, 160);
+
+        }
+
+        #home p {
+            font-size: 30pt;
+            text-shadow: 15px 15px 15px #4ba891;
+        }
+
+
+
+        @media (max-width: 576px) {
+            #home p {
+                font-size: 22pt;
+            }
+        }
+
+
+        /* _______________________________________ABOUTME_____________________________________*/
+
+        /* _______________________ABOUTME \ דיב על עצמי________________________________ */
+        #aboutme {
+            width: 100vw;
+            height: 800px;
+            background-color: rgb(30, 30, 30);
+            display: flex;
+            flex-direction: row;
+
+
+
+
+        }
+
+        /* ______________________דיב_תמונת פרופיל ____________*/
+
+        .imgdiv {
+
+            margin: auto;
+            padding: 150px;
+
+        }
+
+        /* _______________________תמונת פרופיל ____________*/
+        .imgdiv img {
+            width: 7vw;
+            border-radius: 20px;
+        }
+
+        /* _______________טקסט על עצמי __________*/
+        .textabout p {
+            color: honeydew;
+            padding: 100px;
+            font-size: 1.2vw;
+            text-align: center;
+
+
+        }
+
+        /* _______________כותרת של טקסט על עצמי _________*/
+        .textabout h2 {
+            font-size: 55pt;
+            text-align: center;
+            color: honeydew;
+            padding-top: 100px;
+
+        }
+
+        /* ___________________דיב תמונות של שפות __________*/
+        .langimg {
+
+            margin: auto;
+            display: grid;
+            grid-column: auto;
+            gap: 20px;
+        }
+
+        /* _________________תמונות של שפות _________*/
+        .langimg img {
+            width: 75px;
+            height: 75px;
+        }
+
+        /* __________________דיב קורות חיים __________*/
+        .mycvdiv {
+            margin: auto;
+            padding: 100px;
+
+        }
+
+        /* ______________כפתור קורות חיים ________*/
+        .mycv {
+            color: rgb(30 30 30);
+            background-color: orange;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 30px auto;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+
+
+        @media (max-width:576px) {
+
+            #aboutme {
+                width: 100vw;
+                height: 1200px;
+                flex-direction: column;
+            }
+
+            .textabout {
+                color: honeydew;
+                padding-top: 20px;
+                font-size: 25pt;
+                text-align: center;
+
+            }
+
+            .textabout p {
+                padding: 0 20px;
+                font-size: 18px;
+            }
+
+            .imgdiv {
+                padding: 50px;
+            }
+
+            .imgdiv img {
+                width: 15vw;
+                border-radius: 20px;
+            }
+
+            .textabout {
+                padding-top: 15px;
+                font-size: 18pt;
+
+            }
+
+            .langimg {
+                display: flex;
+                flex-direction: row;
+                padding-top: 5px;
+            }
+
+            .langimg img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .mycvdiv {
+                padding: 10px;
+            }
+
+
+
+        }
+
+        /* ___________________________GALLERY_______________________________ */
+
+        /* _________________________דיב גלריה_______________________ */
+        #gallery {
+            width: 100vw;
+            height: 2500px;
+            background-color: rgb(30 30 30);
+            color: rgb(30 30 30);
+            font-size: 40pt;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ____________________כותרת גלריה____________________ */
+        .gallerytitle {
+            color: honeydew;
+            width: 100vw;
+            height: 300px;
+            text-align: center;
+            margin-top: 250px;
+
+        }
+
+        /* ____________________פיסקה גלריה____________________ */
+        .gallerytitle p {
+            color: rgb(0, 160, 160);
+        }
+
+        /* ___________________דיב פרוייקטים____________________ */
+        .gallerygrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 40px;
+            column-gap: 40px;
+            width: 1000px;
+            height: 1000px;
+            margin: 120px auto;
+        }
+
+        /* ___________________דיב פרוייקט בודד____________________ */
+        .project {
+            background-color: honeydew;
+            text-align: center;
+            border: 2px solid gray;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 5px 15px rgba(205, 255, 255, 0.98);
+
+
+        }
+
+        .project h5 {
+            font-size: 20pt;
+        }
+
+        .project p {
+            font-size: 12pt;
+            margin: auto;
+            padding: 0 10px;
+
+        }
+
+        /* ___________תמונה של פרוייקט____________ */
+        .project img {
+
+            width: 100%;
+            border-radius: 20px 20px 0% 0%;
+            opacity: 0.95;
+            border-bottom: 0.5px solid gray;
+
+        }
+
+        /* __________________לחצן קישור ____________________ */
+        .project a {
+            color: rgb(30 30 30);
+            background-color: orange;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12pt;
+
+        }
+
+        /* __________________מעבר על לחצן קישור _________________ */
+        .project a:hover {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+
+        @media (max-width:576px) {
+
+
+
+            .gallerygrid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 20px;
+                column-gap: 20px;
+                width: 500px;
+                height: 500px;
+                margin: 100px auto;
+            }
+
+            .gallerytitle p {
+                font-size: 20px;
+            }
+        }
+
+        /* ______________________________________CONTACT___________________ */
+
+        /* ________________________דיב צור קשר _____________________ */
+
+        #contact {
+            width: 100vw;
+            height: 1100px;
+            background-color: rgb(30 30 30);
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        /* _________________כותרת צור קשר ____________________ */
+        .contacttitle {
+            text-align: center;
+            color: honeydew;
+            height: 150px;
+            font-size: 60px;
+            margin: 20px auto;
+
+        }
+
+        /* ________________________דיב של תמונה + טופס צור קשר_____________________________ */
+        .contactBottom {
+            display: flex;
+            flex-direction: row;
+            padding-top: 200px;
+        }
+
+        /* _________________תמונה צור קשר ____________________ */
+
+        .contactImgDiv {
+            width: 50%;
+
+        }
+
+        .contactImgDiv img {
+            width: 600px;
+            width: 630px;
+            margin-left: 200px;
+
+
+        }
+
+        /* _________________טופס צור קשר ____________________ */
+
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .form-control label {
+            color: orange;
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        .form-control input {
+            font-size: 20px;
+            margin: 20px 50px;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        .form-control textarea {
+
+            height: 148px;
+            font-size: 20px;
+            margin: 20px 50px;
+            resize: none;
+            font-family: "Poppins", sans-serif;
+            ;
+        }
+
+        .form-control input[type="submit"] {
+            display: block;
+            width: 150px;
+            height: 40px;
+            margin: auto;
+            background-color: orange;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-control input[type="submit"]:hover {
+            background-color: rgb(0 160 160);
+
+        }
+
+        @media (max-width:576px) {
+
+
+
+            .contactImgDiv img {
+                width: 200px;
+                margin-left: 200px;
+
+            }
+
+            .contactBottom {
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px
+            }
+        }
+
+        /* ______________________________MAIN________________________________ */
+
+
+        /* ___________________________FOOTER_________________________________ */
+        .footerbox {
+            background-color: rgb(200, 200, 200);
+            height: 70px;
+            font-size: 15pt;
+            text-align: center;
+            padding-top: 20px;
+        }
