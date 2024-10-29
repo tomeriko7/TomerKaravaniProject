@@ -41,7 +41,7 @@ This project is a simple web application that demonstrates basic HTML and CSS sk
 
 3.  ### Installation
    
-    GitHub link:    https://github.com/your-username/project-name.git
+    GitHub link:    https://github.com/tomeriko7/TomerKaravaniProject
     
 
  Open the project folder and open `index.html` in your browser.
