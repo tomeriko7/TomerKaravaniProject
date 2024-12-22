@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trivia Game</title>
+    <script src="trivia.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <source>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Orbitron:wght@400..900&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Sen:wght@400..800&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<button id="openInstructions">Open Instructions</button>
+    <div class="container">
+        <h1>Trivia Game</h1>
+        <div id="question-container">
+
+            <button id="capitals-btn" class="category-btn">Capitals</button>
+            <button id="animals-btn" class="category-btn">Animals</button>
+            <button id="movies-btn" class="category-btn">Movies</button>
+
+            <p id="select-category"></p>
+            <div id="gameStatus"></div>
+            <h2 id="question"></h2>
+            <div id="answers">
+                <button id="btn1" class="btn"></button>
+                <button id="btn2" class="btn"></button>
+                <button id="btn3" class="btn"></button>
+                <button id="btn4" class="btn"></button>
+            </div>
+            
+        </div>
+        <br><br>
+        <button id="start-new-game">Start Again</button>
+        <div id="instructions">
+            <h3>Game instructions:</h3>
+            <br>
+            <p>
+                <span style="font-weight: bold;" class="titlespan">Trivia with 3 Categories</span>
+                <br>
+                Welcome to our exciting trivia game! Test your knowledge across three fascinating categories.<br>Follow these instructions
+                to play:<br><br>
+                <span style="font-weight: bold;" class="titlespan">How to Start?</span>
+                <br>
+                1.At the beginning of the game, you’ll see 3 categories.<br>
+                2.Choose one category to start playing.<br>
+                3.Once selected, you cannot switch to another category until all questions in the current category are completed.
+                <br><br><br>
+                <span style="font-weight: bold;" class="titlespan">Game Rules:</span>
+                <br>
+                1.Each category contains a series of questions.<br>
+                2.There is only one correct answer for each question.<br>
+                3.You are allowed to make up to 4 mistakes during the entire game -
+                If you reach 4 mistakes, the game will end, and you’ll need to restart by clicking on the "Start again" button. <br>
+                4.After completing all questions in a category,
+                A message will appear confirming that the category is complete.
+                You can then choose a new category from the remaining options.
+                <br><br><br>
+                <span style="font-weight: bold;" class="titlespan">Game Progress:</span>
+                <br>
+                As you answer questions correctly, your progress in the selected category will be updated.
+                Questions will get progressively more challenging as you advance in each category.
+                Completing all three categories successfully will declare you the ultimate trivia champion!
+                
+                <br><br>
+                <span style="font-weight: bold;" class="titlespan">Additional Tips:</span>
+                <br>
+                Take your time to think before answering—there’s no time limit for individual questions unless specified.
+                If you’re playing with friends, you can add a timer to make the game more thrilling.
+                
+                Enjoy the game, and May your wisdom lead you to  the glorious victory! 👑
+                <br><br>
+
+                <input type="submit" id="instructionsButton" value="I UNDERSTAND">
+                
+</body>
+
+</html>

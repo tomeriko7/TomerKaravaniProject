@@ -47,7 +47,7 @@ body {
 }
 
 form {
-    height: 40vh;
+    height: 33vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,6 +92,10 @@ form {
 }
 
 @media (max-width:576px) {
+    body {
+        height: 100vh
+    }
+
     .container {
         padding-top: 100px;
         height: 60vh;

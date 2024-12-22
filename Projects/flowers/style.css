@@ -30,7 +30,7 @@ h1 {
 
 .container-form {
     width: 500px;
-    height: 900px;
+    height: 930px;
     background-color: rgba(0, 0, 0, 0.58);
     position: absolute;
     left: 7%;
@@ -196,7 +196,9 @@ h1 {
         padding: 10px;
     }
 
-
+    .generalcontainer {
+        background-size: cover;
+    }
 
 
     .form {

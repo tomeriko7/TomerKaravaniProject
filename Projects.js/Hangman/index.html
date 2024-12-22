@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman_style.css">
+    <script src="hangman.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <button id="openInstructions">Show Instructions</button>
+        <h1>Hangman Game</h1>
+        <div id="attempts"></div>
+        <br>
+        <button id="start-again" class="category-btn">Start Again</button>
+        <div id="categoryDiv">
+            <button class="category-btn" id="fruits-btn">Fruits</button>
+            <button class="category-btn" id="countries-btn">Countries</button>
+            <button class="category-btn" id="animals-btn">Animals</button>
+        </div>
+        <p id="wordDisplay"></p>
+        <p id="gameOver">GAME OVER</p>
+
+        <br>
+        <img id="mistakeImage" style="border: none;" src="images/strike0.png" alt="">
+
+        <div id="divKeyboard">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+            <button>E</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>I</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>M</button>
+            <button>N</button>
+            <button>O</button>
+            <button>P</button>
+            <button>Q</button>
+            <button>R</button>
+            <button>S</button>
+            <button>T</button>
+            <button>U</button>
+            <button>V</button>
+            <button>W</button>
+            <button>X</button>
+            <button>Y</button>
+            <button>Z</button>
+        </div>
+    </div>
+    <div id="instructions">
+        <h2>Welcome to Hangman Game!</h2>
+        <br>
+        <p>
+            <br>
+            <span style="font-weight: bold;">The purpose of the game:</span><br>
+            Guess the hidden word by choosing letters from the alphabet, while trying to avoid mistakes that will
+            promote the
+            hanging of the figure.
+            <br><br><br>
+
+            <span style="font-weight: bold;">Category selection:</span><br>
+            At the beginning of the game, the player must choose a category from a list (for example: animals,
+            countries, fruits
+            , etc.).Once you select a category, you wont be able to change another one untill you finish the selected
+            one.
+            <br><br><br>
+            <span style="font-weight: bold;">Introducing the hidden word:</span><br>
+            After selecting the category, the hidden word will be displayed as a panel of dashes, with each dash
+            representing a letter (eg: _ _ _ _).
+            <br><br><br>
+            <span style="font-weight: bold;">Guessing letters:</span><br>
+            The player chooses a letter each turn.
+            If the letter is present in the word, it will be revealed in the appropriate place on the board.
+            If the letter does not exist in the word, a step is advanced in the hanging of the figure (a hand, a leg,
+            etc. is
+            added).
+            <br><br><br>
+            <span style="font-weight: bold;">Displaying character status:</span><br>
+            The game will show a "hanging man" figure, where each mistake adds another part to the figure (head, body,
+            hands, feet).
+            <br><br><br>
+            <span style="font-weight: bold;">win or lose:</span><br>
+            Win = If the player manages to guess all the letters in the word before the hanging is complete. And so
+            complete all the categories in the game.
+            Loss = If all parts of the figure are drawn before the word is fully revealed.
+            <br><br><br>
+
+        </p>
+        <input type="submit" id="closeInstructions" value="I UNDERSTAND">
+    </div>
+</body>
+
+</html>

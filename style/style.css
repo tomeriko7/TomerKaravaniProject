@@ -222,8 +222,8 @@
 
         /* _______________________תמונת פרופיל ____________*/
         .imgdiv img {
-            width: 7vw;
-            border-radius: 20px;
+            width: 10vw;
+            border-radius: 50px;
         }
 
         /* _______________טקסט על עצמי __________*/
@@ -311,8 +311,8 @@
             }
 
             .imgdiv img {
-                width: 15vw;
-                border-radius: 20px;
+                width: 30vw;
+                border-radius: 40px;
             }
 
             .textabout {
@@ -345,7 +345,7 @@
         /* _________________________דיב גלריה_______________________ */
         #gallery {
             width: 100vw;
-            height: 2500px;
+            height: 3700px;
             background-color: rgb(30 30 30);
             color: rgb(30 30 30);
             font-size: 40pt;
@@ -357,7 +357,7 @@
         .gallerytitle {
             color: honeydew;
             width: 100vw;
-            height: 300px;
+
             text-align: center;
             margin-top: 250px;
 
@@ -376,7 +376,7 @@
             row-gap: 40px;
             column-gap: 40px;
             width: 1000px;
-            height: 1000px;
+            height: 1500px;
             margin: 120px auto;
         }
 
@@ -446,12 +446,32 @@
                 row-gap: 20px;
                 column-gap: 20px;
                 width: 500px;
-                height: 500px;
                 margin: 0 auto;
             }
 
             .gallerytitle p {
                 font-size: 20px;
+            }
+
+            .project {
+                height: 350px;
+                width: 230px;
+            }
+
+            .project h5 {
+                font-size: 15pt;
+            }
+
+            .project p {
+                font-size: 9pt;
+            }
+
+            #gallery {
+                height: 4100px;
+            }
+
+            #gallerytitlejavascript {
+                height: 1100px;
             }
         }
 
@@ -475,7 +495,7 @@
             color: honeydew;
             height: 150px;
             font-size: 60px;
-            margin: 20px auto;
+            margin: 75px auto;
 
         }
 

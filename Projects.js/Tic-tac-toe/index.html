@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <button id="openInstructions">Instructions</button>
+    <div id="divButton">
+        <button id="newGame">Start New Game</button><br><br>
+        <div id="message"></div>
+    </div>
+    <div id="gameContainer">
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+    </div>
+
+    <div id="messageGO"></div>
+
+    <div id="instructions">
+        <h2>Game instructions:</h2>
+        <br>
+        <p>
+            <span style="font-weight: bold;">The purpose of the game:</span><br>
+            Create a sequence of three symbols (X or circle) in a row, column, or diagonally on the game board.
+            <br><br><br>
+        <h3 style="font-weight: bold;">How to play?</h3>
+        <br><br>
+        <span style="font-weight: bold;">The game board:</span><br>
+        The board consists of 9 squares (3x3).
+        At the beginning of the game all the squares are empty.
+        <br><br><br>
+        <span style="font-weight: bold;">Division of roles:</span><br>
+        The first player always plays with "X".
+        The other player plays with "O".
+        <br><br><br>
+        <span style="font-weight: bold;">The course of the game:</span><br>
+        Each player in turn clicks on an empty square on the board.
+        The current player's symbol (X or circle) will fill the selected slot.
+        <br><br><br>
+        <span style="font-weight: bold;">Deciding the game:</span><br>
+        The game ends in one of the following ways:<br>
+        *Win: If one of the players forms a sequence of 3 identical symbols in a row, column or diagonal.<br>
+        *Draw: If all slots are full and there is no winner.
+        A message about the result of the game will appear at the end of the game.
+        <br><br><br>
+        <span style="font-weight: bold;">Starting a new game:</span><br>
+        Clicking the "Start New Game" button will reset the board and allow the game to be restarted.<br>
+        The first player will always be "X" in the new games as well.
+        <br>
+        </p>
+        <input type="submit" id="instructionsButton" value="OK">
+    </div>
+</body>
+
+</html>

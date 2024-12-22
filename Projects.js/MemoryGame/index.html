@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="memory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <button id="openInstructions">Instructions</button>
+    <button id="start-game">Start Game</button>
+    <div id="gameContainer">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <div id="game-finished">Game Finished</div>
+    <div id="instructions">
+        <h3>Game instructions:</h3>
+        <br>
+        <p>
+            <span style="font-weight: bold;">Preparations for the game:</span>
+            <br>
+            Click the "Start Game" button to start a new game.
+            Each time you press the button, the colors on the cards will be redistributed randomly.
+            All cards will start in the closed position (their backs are visible).
+            <br><br><br>
+            <span style="font-weight: bold;">The course of the game:</span>
+            <br>
+            Click on a card to turn it over and find out its suit.
+            Then, click on another card to try to find a matching pair.
+            If the suit of the two cards matches, they will remain visible.
+            If the suits don't match, the cards will flip back to the back side after 1-2 seconds.
+            <br><br><br>
+            <span style="font-weight: bold;">End game:</span>
+            <br>
+            The game ends when all the cards on the board are faced up and matched into pairs.
+            <br><br><br>
+            <span style="font-weight: bold;">Additions and special rules:</span>
+            <br>
+            Restart button:
+            <br>
+            You can press the "Start Game" button at any moment to start a new game.
+            The button will redistribute the colors on the board and restart the game.
+            <br><br>
+            Remember the colors:<br>
+            Use your memory to remember where each color is, and try to match pairs as fast as possible.
+            You can open a stopwatch.
+            <br><br><br>
+            <span style="font-weight: bold;">Additional highlights:</span>
+            <br>
+            The game is suitable for all ages and improves memory and concentration skills.
+
+        </p>
+        <input type="submit" id="instructionsButton" value="I UNDERSTAND">
+    </div>
+</body>
+
+</html>

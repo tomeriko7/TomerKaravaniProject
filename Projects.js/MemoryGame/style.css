@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ffd4bd, #a4a4a4a3, #060507)
+}
+
+#gameContainer {
+    width: 1100px;
+    height: 1050px;
+    background-color: transparent;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(4, 250px);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.card.disabled {
+    pointer-events: none;
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button {
+    height: 50px;
+    font-size: 1rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 30px;
+    background: rgb(58, 58, 58);
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-family: "Silkscreen", sans-serif;
+
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px whitesmoke;
+    color: rgb(58, 58, 58);
+    background-color: whitesmoke;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+#game-finished {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 41%;
+    left: 40%;
+    font-family: "Silkscreen", sans-serif;
+    border: 4px dashed rgb(255, 255, 239);
+    display: none;
+
+}
+
+#instructions {
+    width: 1200px;
+    height: 800px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    font-size: 17px;
+    text-align: justify;
+    align-content: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 10%;
+    left: 27%;
+    font-family: "Silkscreen", sans-serif;
+    border: 4px solid rgb(255, 255, 239);
+    display: block;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+#instructionsButton {
+    margin: 15px auto;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    box-shadow: 2px 2px 2px whitesmoke;
+    color: rgb(58, 58, 58);
+    background-color: #f7a264;
+    border: 1px solid rgb(58, 58, 58);
+    font-family: "Silkscreen", sans-serif;
+
+}
+
+#instructionsButton:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
+    color: whitesmoke;
+    background-color: rgb(102, 102, 102);
+}
+
+#openInstructions {
+    margin: 15px;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    box-shadow: 2px 2px 2px whitesmoke;
+    color: rgb(58, 58, 58);
+    background-color: whitesmoke;
+    border: 1px solid rgb(58, 58, 58);
+    font-family: "Silkscreen", sans-serif;
+}
+
+#openInstructions:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
+    color: whitesmoke;
+    background-color: rgb(102, 102, 102);
+}
+
+@media (max-width: 576px) {
+
+    #gameContainer {
+        width: 25rem;
+        height: 25rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    #game-finished {
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        top: 40%;
+        left: 5%;
+    }
+
+    #instructions {
+        width: 90%;
+        height: 400px;
+        font-size: 15px;
+        top: 10%;
+        left: 5%;
+        padding: 15px;
+        overflow: scroll;
+    }
+
+
+
+    #instructionsButton {
+        width: 100px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+    button {
+        width: 25%;
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    #openInstructions {
+        margin: 15px;
+        display: flex;
+        width: 150px;
+        height: 30px;
+
+    }
+}

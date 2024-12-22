@@ -1,0 +1,212 @@
+body {
+    font-family: "Sen", sans-serif;
+    background-color: #afb8b8;
+    margin: 0 auto;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #393939;
+    padding: 20px;
+    height: 1000px;
+    width: 70vw;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px #b78900;
+    margin: 50px auto;
+    border: 10px solid #ffd75f;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #1bce55;
+}
+
+#select-category {
+    color: #1bce55;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.category-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffd75f;
+    margin-top: 20px;
+    font-family: "Sen", sans-serif;
+    border: 2px solid #3f3f3f;
+}
+
+#question-container {
+    background-color: #8a2be296;
+    width: 70vw;
+    height: 900px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#question {
+    padding-top: 40px;
+    color: #cdcdcd;
+}
+
+#answers {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 100px 20px;
+    gap: 20px;
+    width: 25vw;
+
+}
+
+.btn {
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    background-color: #cdcdcd;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    font-size: 15px;
+    font-family: "Sen", sans-serif;
+}
+
+.correct {
+    background-color: rgb(109, 209, 109);
+}
+
+.wrong {
+    background-color: #eb4f4f;
+}
+
+#gameStatus {
+    width: 80%;
+    max-width: 400px;
+    height: 100px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px solid #ffd75f;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#start-new-game {
+    width: 15%;
+    height: 80px;
+    background-color: #ffd75f;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    font-size: 15px;
+    font-family: "Sen", sans-serif;
+    margin-top: 20px;
+    display: none;
+    margin: 20px auto;
+}
+
+#instructions {
+    width: 1200px;
+    height: 800px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    font-size: 17px;
+    text-align: justify;
+    align-content: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 10%;
+    left: 27%;
+    font-family: "Sen", sans-serif;
+    border: 4px solid rgb(255, 255, 239);
+    display: block;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+#instructions h3 {
+    color: #ffd75f
+}
+
+#instructionsButton {
+    margin: 15px auto;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    box-shadow: 2px 2px 2px whitesmoke;
+    border-radius: 15px;
+    color: rgb(58, 58, 58);
+    background-color: #ffd75f;
+    border: 1px solid rgb(58, 58, 58);
+    font-family: "Sen", sans-serif;
+
+}
+
+#instructionsButton:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
+    color: whitesmoke;
+    background-color: rgb(102, 102, 102);
+}
+
+#openInstructions {
+    margin: 15px;
+    display: flex;
+    width: 130px;
+    height: 30px;
+    box-shadow: 2px 2px 2px whitesmoke;
+    color: rgb(58, 58, 58);
+    background-color: #8a2be296;
+    border: 1px solid rgb(58, 58, 58);
+    font-family: "Sen", sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#openInstructions:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
+    color: whitesmoke;
+    background-color: rgb(102, 102, 102);
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 25vw;
+        height: 60px;
+    }
+
+    #question-container {
+        height: 750px;
+    }
+
+    #answers {
+        width: 54vw;
+    }
+
+    #start-new-game {
+        width: 30%;
+        height: 50px;
+    }
+
+    .container {
+        height: 850px;
+    }
+}
