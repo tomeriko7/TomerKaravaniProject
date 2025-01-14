@@ -218,7 +218,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 976px) {
     #home {
         padding-top: 90px;
     }
