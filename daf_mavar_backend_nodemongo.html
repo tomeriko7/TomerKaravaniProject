@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daf Mavar Coffee</title>
+    <title>Daf Mavar PlateVite</title>
     <link rel="stylesheet" href="style/daf_mavar_style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,14 @@
     <!-- __________________________HEADER____________________________ -->
     <header>
       <nav>
-        <div id="hamburger">&#9776;</div>
+        <div
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          role="button"
+          tabindex="0"
+        >
+          &#9776;
+        </div>
         <ul>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a href="index.html#gallery">Gallery</a></li>
@@ -26,7 +33,11 @@
           <li><a href="index.html#home">Home</a></li>
         </ul>
         <div class="logoname">Tomer Karavani</div>
-        <img class="logo" src="images/orangelogoicon.png" alt="logo" />
+        <img
+          class="logo"
+          src="images/orangelogoicon.png"
+          alt="Tomer Karavani logo"
+        />
       </nav>
     </header>
 
@@ -34,29 +45,42 @@
     <main>
       <!-- __________________________HOME____________________________ -->
       <div id="home">
-        <h1>Coffee Coupon</h1>
-        <p>Free coffee coupon for a coffee shop.</p>
+        <h1>Card Management System Based on Node.js</h1>
+        <p>
+          A Node.js-based card management system that enables card organization
+          and management with user authentication and advanced security features
+        </p>
 
         <div id="enterproject">
-          <a href="Projects/coffee/index.html" target="_blank">View Project</a>
-          <a href="Projects/coffee.zip">Download Project</a>
+          <a href="Projects.js/Tic-tac-toe/index.html" target="_blank"
+            >View Project</a
+          >
+          <a href="Projects.js/Tic-tac-toe.zip">Download Project</a>
         </div>
 
         <div class="langimg">
-          <img src="images/cssicon.png" alt="css logo" />
-          <img src="images/htmlicon.png" alt="html logo" />
+          <img src="images/cssicon.png" alt="CSS logo" />
+          <img src="images/htmlicon.png" alt="HTML logo" />
+          <img src="images/javascripticon.png" alt="JavaScript logo" />
+          <img src="images/reacticon.png" alt="react logo" />
+          <img src="images/pythonicon.png" alt="python logo" />
+          <img src="images/djangoicon.png" alt="django logo" />
+          <img src="images/postgresqlicon.png" alt="postgresql logo" />
         </div>
       </div>
 
       <div class="divprojectimg">
-        <img src="images/daf_mavar_coffee-img.png" alt="coffee Banner" />
+        <img
+          src="images/daf_mavar_backend_nodemongo-img.png"
+          alt="Digital business card web project"
+        />
       </div>
     </main>
 
     <!-- ______________________________FOOTER__________________________ -->
     <footer>
       <div class="footerbox">
-        This Site Was Created By <span>Tomer Karavani</span> &copy; &reg;
+        This Site Was Created By <span>Tomer Karavani</span>. &copy; &reg;
         &trade;
       </div>
     </footer>
@@ -68,6 +92,14 @@
 
       hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("open");
+      });
+
+      // אפשר להוסיף גם תמיכה במקלדת (Enter/Space) לפתיחת התפריט
+      hamburger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          navMenu.classList.toggle("open");
+        }
       });
     </script>
   </body>

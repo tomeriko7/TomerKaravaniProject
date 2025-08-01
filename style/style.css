@@ -1,608 +1,652 @@
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* ______________________________________HEADER__________________________________ */
-
-        /* ______________________________HEADER דיב________________________ */
-
-        body {
-            font-family: "Poppins", sans-serif;
-            overflow-x: hidden;
-            /* מבטל גלילה אופקית */
-        }
-
-        header {
-            width: 100vw;
-            height: 100px;
-            position: fixed;
-
-
-
-        }
-
-        /* ________סרגל ניווט_______________ */
-        nav {
-            height: 100px;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-around;
-            margin: 0 auto;
-            background-color: rgba(30, 30, 30, 0.3);
-            ;
-            padding-left: 20px;
-            padding-top: 20px;
-
-        }
-
-        /* ________________המבורגר________________ */
-        #hamburger {
-
-            display: none;
-        }
-
-        /* __________רשימת פריטים לסרגל ________________*/
-        nav ul {
-            list-style-type: none;
-            direction: rtl;
-            display: flex;
-
-
-        }
-
-        nav ul li {
-            float: left;
-
-
-
-        }
-
-        /* __________ לינק אייטם בודד____________*/
-
-        nav ul li a {
-            text-decoration: none;
-            display: block;
-            width: 100px;
-            text-align: center;
-            font-size: 15pt;
-            color: honeydew;
-            line-height: 2;
-            font-family: "Poppins", sans-serif;
-        }
-
-        /* _________ מעבר על לינק אייטם____________*/
-        nav ul li a:hover {
-            color: goldenrod;
-        }
-
-        /* ___________________לוגו בסרגל ניווט _____________ */
-        .logo {
-            width: 62px;
-            height: 62px;
-            border-radius: 31px;
-
-        }
-
-        .logoname {
-            color: honeydew;
-            line-height: 50px;
-
-            left: 200px;
-            font-family: "Poppins", sans-serif;
-            font-size: 20pt;
-        }
-
-        @media (max-width:576px) {
-
-
-            .logo {
-                display: none;
-            }
-
-            .logoname {
-                position: fixed;
-            }
-
-            #hamburger {
-                display: block;
-                color: honeydew;
-                font-size: 3rem;
-                font-weight: bolder;
-                position: fixed;
-                left: 15px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                margin-top: 82px;
-                background-color: rgba(30, 30, 30, 0.3);
-                display: none;
-                position: fixed;
-                left: 0;
-
-            }
-
-            nav ul li a {
-                border-bottom: 3px solid transparent;
-                width: 100vw;
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-
-            #hamburger:hover+ul {
-                display: block;
-                cursor: pointer;
-            }
-        }
-
-        /* _______________________________________HEADER_________________________________ */
-
-
-        /* ____________________________________MAIN_________________________________ */
-
-
-
-        main {
-
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* ___________________________________HOME______________________________ */
-
-        /* ____________________________HOME דיב______________________________ */
-        #home {
-            width: 100vw;
-            height: 1200px;
-            background-image: url('../images/homebackground.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: honeydew;
-            font-size: 30pt;
-            padding-left: 100px;
-            padding-top: 150px;
-            font-family: "Poppins", sans-serif;
-            text-align: left;
-        }
-
-
-
-        #home h1 {
-            color: goldenrod;
-
-        }
-
-
-
-        #home h3 {
-            color: rgb(0, 160, 160);
-
-        }
-
-        #home p {
-            font-size: 30pt;
-            text-shadow: 15px 15px 15px #4ba891;
-        }
-
-
-
-        @media (max-width: 576px) {
-            #home p {
-                font-size: 22pt;
-            }
-        }
-
-
-        /* _______________________________________ABOUTME_____________________________________*/
-
-        /* _______________________ABOUTME \ דיב על עצמי________________________________ */
-        #aboutme {
-            width: 100vw;
-            height: 800px;
-            background-color: rgb(30, 30, 30);
-            display: flex;
-            flex-direction: row;
-
-
-
-
-        }
-
-        /* ______________________דיב_תמונת פרופיל ____________*/
-
-        .imgdiv {
-
-            margin: auto;
-            padding: 150px;
-
-        }
-
-        /* _______________________תמונת פרופיל ____________*/
-        .imgdiv img {
-            width: 10vw;
-            border-radius: 50px;
-        }
-
-        /* _______________טקסט על עצמי __________*/
-        .textabout p {
-            color: honeydew;
-            padding: 100px;
-            font-size: 1.2vw;
-            text-align: center;
-
-
-        }
-
-        /* _______________כותרת של טקסט על עצמי _________*/
-        .textabout h2 {
-            font-size: 55pt;
-            text-align: center;
-            color: honeydew;
-            padding-top: 100px;
-
-        }
-
-        /* ___________________דיב תמונות של שפות __________*/
-        .langimg {
-
-            margin: auto;
-            display: grid;
-            grid-column: auto;
-            gap: 20px;
-        }
-
-        /* _________________תמונות של שפות _________*/
-        .langimg img {
-            width: 75px;
-            height: 75px;
-        }
-
-        /* __________________דיב קורות חיים __________*/
-        .mycvdiv {
-            margin: auto;
-            padding: 100px;
-
-        }
-
-        /* ______________כפתור קורות חיים ________*/
-        .mycv {
-            color: rgb(30 30 30);
-            background-color: orange;
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            margin: 30px auto;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-        }
-
-
-
-        @media (max-width:576px) {
-
-            #aboutme {
-                width: 100vw;
-                height: 1200px;
-                flex-direction: column;
-            }
-
-            .textabout {
-                color: honeydew;
-                padding-top: 20px;
-                font-size: 25pt;
-                text-align: center;
-
-            }
-
-            .textabout p {
-                padding: 0 20px;
-                font-size: 18px;
-            }
-
-            .imgdiv {
-                padding: 50px;
-            }
-
-            .imgdiv img {
-                width: 30vw;
-                border-radius: 40px;
-            }
-
-            .textabout {
-                padding-top: 15px;
-                font-size: 18pt;
-
-            }
-
-            .langimg {
-                display: flex;
-                flex-direction: row;
-                padding-top: 5px;
-            }
-
-            .langimg img {
-                width: 50px;
-                height: 50px;
-            }
-
-            .mycvdiv {
-                padding: 10px;
-            }
-
-
-
-        }
-
-        /* ___________________________GALLERY_______________________________ */
-
-        /* _________________________דיב גלריה_______________________ */
-        #gallery {
-            width: 100vw;
-            height: 3700px;
-            background-color: rgb(30 30 30);
-            color: rgb(30 30 30);
-            font-size: 40pt;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* ____________________כותרת גלריה____________________ */
-        .gallerytitle {
-            color: honeydew;
-            width: 100vw;
-
-            text-align: center;
-            margin-top: 250px;
-
-        }
-
-        /* ____________________פיסקה גלריה____________________ */
-        .gallerytitle p {
-            color: rgb(0, 160, 160);
-        }
-
-        /* ___________________דיב פרוייקטים____________________ */
-        .gallerygrid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            row-gap: 40px;
-            column-gap: 40px;
-            width: 1000px;
-            height: 1500px;
-            margin: 120px auto;
-        }
-
-        /* ___________________דיב פרוייקט בודד____________________ */
-        .project {
-            background-color: honeydew;
-            text-align: center;
-            border: 2px solid gray;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 5px 5px 15px rgba(205, 255, 255, 0.98);
-
-
-        }
-
-        .project h5 {
-            font-size: 20pt;
-        }
-
-        .project p {
-            font-size: 12pt;
-            margin: auto;
-            padding: 0 10px;
-
-        }
-
-        /* ___________תמונה של פרוייקט____________ */
-        .project img {
-
-            width: 100%;
-            border-radius: 20px 20px 0% 0%;
-            opacity: 0.95;
-            border-bottom: 0.5px solid gray;
-
-        }
-
-        /* __________________לחצן קישור ____________________ */
-        .project a {
-            color: rgb(30 30 30);
-            background-color: orange;
-            width: 200px;
-            height: 30px;
-            border-radius: 10px;
-            margin: 30px auto;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12pt;
-
-        }
-
-        /* __________________מעבר על לחצן קישור _________________ */
-        .project a:hover {
-            background-color: rgba(255, 165, 0, 0.5);
-        }
-
-        @media (max-width:576px) {
-
-
-
-            .gallerygrid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                row-gap: 20px;
-                column-gap: 20px;
-                width: 500px;
-                margin: 0 auto;
-            }
-
-            .gallerytitle p {
-                font-size: 20px;
-            }
-
-            .project {
-                height: 350px;
-                width: 230px;
-            }
-
-            .project h5 {
-                font-size: 15pt;
-            }
-
-            .project p {
-                font-size: 9pt;
-            }
-
-            #gallery {
-                height: 4100px;
-            }
-
-            #gallerytitlejavascript {
-                height: 1100px;
-            }
-        }
-
-        /* ______________________________________CONTACT___________________ */
-
-        /* ________________________דיב צור קשר _____________________ */
-
-        #contact {
-            width: 100vw;
-            height: 1100px;
-            background-color: rgb(30 30 30);
-            display: flex;
-            flex-direction: column;
-
-
-        }
-
-        /* _________________כותרת צור קשר ____________________ */
-        .contacttitle {
-            text-align: center;
-            color: honeydew;
-            height: 150px;
-            font-size: 60px;
-            margin: 75px auto;
-
-        }
-
-        /* ________________________דיב של תמונה + טופס צור קשר_____________________________ */
-        .contactBottom {
-            display: flex;
-            flex-direction: row;
-            padding-top: 200px;
-        }
-
-        /* _________________תמונה צור קשר ____________________ */
-
-        .contactImgDiv {
-            width: 50%;
-
-        }
-
-        .contactImgDiv img {
-            width: 600px;
-            width: 630px;
-            margin-left: 200px;
-
-
-        }
-
-        /* _________________טופס צור קשר ____________________ */
-
-
-        #contact form {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-        }
-
-        .form-control {
-            display: flex;
-            flex-direction: column;
-        }
-
-
-        .form-control label {
-            color: orange;
-            font-size: 1.2rem;
-            display: block;
-        }
-
-        .form-control input {
-            font-size: 20px;
-            margin: 20px 50px;
-            font-family: "Poppins", sans-serif;
-
-        }
-
-        .form-control textarea {
-
-            height: 148px;
-            font-size: 20px;
-            margin: 20px 50px;
-            resize: none;
-            font-family: "Poppins", sans-serif;
-            ;
-        }
-
-        .form-control input[type="submit"] {
-            display: block;
-            width: 150px;
-            height: 40px;
-            margin: auto;
-            background-color: orange;
-            border-radius: 5px;
-            cursor: pointer;
-            border: none;
-        }
-
-        .form-control input[type="submit"]:hover {
-            background-color: rgb(0 160 160);
-
-        }
-
-        @media (max-width:576px) {
-
-
-
-            .contactImgDiv img {
-                width: 200px;
-                margin-left: 200px;
-
-            }
-
-            .contactBottom {
-                display: flex;
-                flex-direction: column;
-                padding-top: 10px
-            }
-        }
-
-        /* ______________________________MAIN________________________________ */
-
-
-        /* ___________________________FOOTER_________________________________ */
-        .footerbox {
-            background-color: rgb(200, 200, 200);
-            height: 70px;
-            font-size: 15pt;
-            text-align: center;
-            padding-top: 20px;
-            width: 100vw;
-        }
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(30, 30, 30);
+}
+
+/* HEADER */
+header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgba(229, 229, 229, 0.2);
+  padding: 20px;
+}
+
+#hamburger {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  direction: rtl;
+  display: flex;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-size: 15pt;
+  color: honeydew;
+  line-height: 2;
+}
+
+nav ul li a:hover {
+  color: goldenrod;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+}
+
+.logoname {
+  color: honeydew;
+  font-size: 20pt;
+  font-weight: 600;
+  font-family: "Source Code Pro", monospace;
+}
+
+/* MOBILE HEADER */
+@media (max-width: 576px) {
+  .logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 250;
+  }
+
+  .logoname {
+    position: static;
+    text-align: center;
+    flex: 1;
+  }
+
+  #hamburger {
+    display: block;
+    color: honeydew;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    z-index: 300;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 82px;
+    background-color: rgba(30, 30, 30, 0.95);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    z-index: 200;
+  }
+
+  nav ul.open {
+    display: flex;
+    max-height: 500px;
+  }
+
+  nav ul li a {
+    border-bottom: 3px solid transparent;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HOME */
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/homebackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: honeydew;
+  font-size: 30pt;
+  padding-left: 100px;
+  padding-top: 150px;
+  text-align: left;
+  animation: fadeSlideDown 1.2s ease forwards;
+}
+
+#home h1 {
+  color: goldenrod;
+}
+
+#home h3:first-of-type {
+  color: rgb(0, 160, 160);
+  display: inline-block;
+  animation: jump 1s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+#home p {
+  font-size: 30pt;
+  text-shadow: 15px 15px 15px #4ba891;
+  animation: fadeInUp 3.5s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  #home {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18pt; /* להקטין בסיס */
+    height: 100vh; /* מסך מלא */
+    justify-content: flex-start; /* נתחיל מלמעלה */
+    padding-top: 80px;
+  }
+
+  #home h1 {
+    font-size: 28pt; /* במקום גדול מדי */
+  }
+
+  #home h3 {
+    font-size: 20pt;
+  }
+
+  #home p {
+    font-size: 14pt; /* הקטנה */
+    margin-top: 10px;
+  }
+}
+
+/* ABOUT ME */
+#aboutme {
+  width: 100vw;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#aboutme .textabout h2 {
+  font-size: 40pt;
+  color: honeydew;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#aboutme .textabout p {
+  color: honeydew;
+  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto 40px auto;
+}
+
+/* תמונת פרופיל */
+.imgdiv {
+  margin-bottom: 30px;
+}
+
+.imgdiv img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+/* אייקונים של השפות */
+.langimg {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.langimg img {
+  width: 75px;
+  height: 75px;
+}
+
+/* כפתור קורות חיים */
+.mycvdiv {
+  margin: 30px 0;
+}
+
+.mycv {
+  color: rgb(30 30 30);
+  background-color: orange;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  #aboutme {
+    padding: 50px 20px;
+  }
+
+  #aboutme .textabout p {
+    font-size: 18px;
+  }
+
+  .imgdiv img {
+    width: 140px;
+  }
+
+  .langimg img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* GALLERY */
+#gallery {
+  width: 100vw;
+  background-color: rgb(30 30 30);
+  color: honeydew;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+/* כותרת אחידה לכל החלקים */
+.gallerytitle {
+  text-align: center;
+  margin: 120px 0 40px 0;
+}
+
+.gallerytitle h2,
+.gallerytitle p {
+  font-size: 40pt;
+  font-weight: 700;
+  color: honeydew;
+}
+
+.gallerytitle p {
+  color: rgb(0, 160, 160);
+  font-size: 30pt;
+}
+
+.gallerygrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 40px;
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.95;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.project h5 {
+  font-size: 18pt;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.project p {
+  font-size: 13pt;
+  line-height: 1.4;
+}
+
+.project a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e1e1e;
+  background-color: orange;
+  width: 80%;
+  max-width: 200px;
+  min-width: 120px;
+  padding: 8px 0;
+  border-radius: 10px;
+  margin: 15px auto;
+  text-decoration: none;
+  font-size: clamp(10pt, 2vw, 12pt);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.project a:hover {
+  background-color: rgb(0, 160, 160);
+  color: #d8d8d8;
+  transform: scale(1.07);
+  box-shadow: 0 4px 15px rgba(0, 160, 160, 0.6);
+}
+
+@media (max-width: 576px) {
+  .gallerygrid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .gallerytitle h2,
+  .gallerytitle p {
+    font-size: 28pt;
+  }
+
+  .project {
+    height: auto;
+    width: 230px;
+  }
+
+  .project h5 {
+    font-size: 15pt;
+  }
+
+  .project p {
+    font-size: 9pt;
+  }
+
+  .project a {
+    font-size: 10pt;
+    padding: 6px 0;
+  }
+}
+
+/* CONTACT */
+#contact {
+  width: 100vw;
+  background-color: rgb(30 30 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.contacttitle {
+  text-align: center;
+  color: honeydew;
+  font-size: 40pt;
+  margin-bottom: 50px;
+}
+
+.contactBottom {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+.contactImgDiv img {
+  width: 400px;
+  max-width: 90%;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 90%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  color: orange;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-control textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form-control input[type="submit"] {
+  background-color: orange;
+  color: rgb(30, 30, 30);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-control input[type="submit"]:hover {
+  background-color: rgb(0 160 160);
+}
+
+/* כפתורי קשר נוספים */
+.contact-links {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding-left: 50px; 
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  background-color: rgba(255, 255, 255, 0.05); 
+  color: #dcdcdc; 
+  transition: all 0.3s ease;
+  justify-content: center; 
+}
+
+.contact-btn i {
+  font-size: 1.2rem;
+  color: #b5b5b5;
+}
+
+.contact-btn.whatsapp {
+  background-color: #108b3d;
+}
+
+.contact-btn.email {
+  background-color: rgb(185 0 85)
+}
+
+.contact-btn.linkedin {
+  background-color: #0A66C2;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 50px 10px; 
+  }
+
+  .contacttitle {
+    font-size: 28pt; 
+    margin-bottom: 30px;
+  }
+
+  .contactBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactImgDiv img {
+    width: 250px; 
+    max-width: 80%;
+  }
+
+  #contact form {
+    width: 300px; 
+    max-width: 90%;
+  }
+
+  .form-control label {
+    font-size: 1rem; 
+  }
+
+  .form-control input,
+  .form-control textarea {
+    font-size: 16px; 
+    padding: 8px;
+  }
+
+  .form-control textarea {
+    height: 100px;
+  }
+
+  .form-control input[type="submit"] {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-btn {
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  color: honeydew;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  position: relative;
+}
+
+footer .footerbox {
+  font-size: 1.1rem;
+}
+
+footer .footerbox span {
+  color: rgb(0, 160, 160);
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
