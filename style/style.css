@@ -79,32 +79,38 @@ nav ul li a:hover {
 
 /* MOBILE HEADER */
 @media (max-width: 576px) {
+  nav {
+    justify-content: center;
+    gap: 10px;
+    overflow-x: hidden;
+  }
+
   .logo {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 15px;
-    top: 15px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: relative;
     z-index: 250;
   }
 
   .logoname {
-    position: static;
+    font-size: 14pt;
     text-align: center;
-    flex: 1;
+    white-space: nowrap;
   }
 
   #hamburger {
     display: block;
     color: honeydew;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    position: fixed;
-    left: 15px;
+    position: absolute; /* במקום fixed */
+    left: 10px;
     top: 20px;
     z-index: 300;
     cursor: pointer;
+    max-width: 40px; /* מונע חריגה */
+    overflow: hidden;
   }
 
   nav ul {
@@ -113,8 +119,8 @@ nav ul li a:hover {
     background-color: rgba(30, 30, 30, 0.95);
     position: fixed;
     left: 0;
-    width: 100vw;
-    height: auto;
+    top: 0;
+    width: 100%;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease;
@@ -128,7 +134,7 @@ nav ul li a:hover {
 
   nav ul li a {
     border-bottom: 3px solid transparent;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
@@ -416,8 +422,10 @@ main {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
     column-gap: 20px;
-    width: 500px;
-    max-width: 100%;
+    width: 100%; 
+    max-width: 100%; 
+    padding: 0 10px; 
+    box-sizing: border-box;
   }
 
   .gallerytitle h2,
@@ -427,7 +435,7 @@ main {
 
   .project {
     height: auto;
-    width: 230px;
+    width: 100%;
   }
 
   .project h5 {
