@@ -32,7 +32,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  background-color: rgba(229, 229, 229, 0.2);
+  background-color: rgb(30, 30, 30); /* מלא – בלי שקיפות */
   padding: 20px;
 }
 
@@ -104,19 +104,19 @@ nav ul li a:hover {
     color: honeydew;
     font-size: 2.5rem;
     font-weight: bolder;
-    position: absolute; /* במקום fixed */
+    position: absolute;
     left: 10px;
     top: 20px;
     z-index: 300;
     cursor: pointer;
-    max-width: 40px; /* מונע חריגה */
+    max-width: 40px;
     overflow: hidden;
   }
 
   nav ul {
     flex-direction: column;
     margin-top: 82px;
-    background-color: rgba(30, 30, 30, 0.95);
+    background-color: rgb(25 25 25 / 97%);
     position: fixed;
     left: 0;
     top: 0;
@@ -178,20 +178,21 @@ main {
 
 #home {
   width: 100vw;
-  height: 100vh;
+  height: 40vh; /* מוקטן יותר כדי להכניס גם את about */
   background-image: url("../images/homebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: honeydew;
-  font-size: 30pt;
-  padding-left: 100px;
-  padding-top: 150px;
-  text-align: left;
+  font-size: 20pt; /* מוקטן */
+  padding-left: 80px;
+  padding-top: 120px;
+  text-align: center;
   animation: fadeSlideDown 1.2s ease forwards;
 }
 
 #home h1 {
   color: goldenrod;
+  font-size: 1.8rem; /* מוקטן */
 }
 
 #home h3:first-of-type {
@@ -199,11 +200,12 @@ main {
   display: inline-block;
   animation: jump 1s ease-in-out infinite;
   animation-delay: 2s;
+  font-size: 1.2rem; /* מוקטן */
 }
 
 #home p {
-  font-size: 30pt;
-  text-shadow: 15px 15px 15px #4ba891;
+  font-size: 1.2rem; /* מוקטן */
+  text-shadow: 8px 8px 8px #4ba891;
   animation: fadeInUp 3.5s ease forwards;
   animation-delay: 0.5s;
   opacity: 0;
@@ -213,23 +215,21 @@ main {
   #home {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 14pt;
-    height: 100vh;
+    font-size: 12pt;
+    height: 60vh; /* גם קטן וגם פרקטי במובייל */
     justify-content: flex-start;
-    padding-top: 280px;
+    padding-top: 150px;
   }
 
   #home h1 {
-    font-size: 22pt;
+    font-size: 18pt;
   }
-
   #home h3 {
-    font-size: 16pt;
+    font-size: 14pt;
   }
-
   #home p {
-    font-size: 12pt;
-    margin-top: 10px;
+    font-size: 11pt;
+    margin-top: 8px;
   }
 }
 
@@ -263,7 +263,6 @@ main {
 .imgdiv {
   margin-bottom: 30px;
 }
-
 .imgdiv img {
   width: 180px;
   border-radius: 50%;
@@ -277,7 +276,6 @@ main {
   margin: 20px 0;
   flex-wrap: wrap;
 }
-
 .langimg img {
   width: 75px;
   height: 75px;
@@ -287,7 +285,6 @@ main {
 .mycvdiv {
   margin: 30px 0;
 }
-
 .mycv {
   color: rgb(30 30 30);
   background-color: orange;
@@ -306,15 +303,12 @@ main {
   #aboutme {
     padding: 50px 20px;
   }
-
   #aboutme .textabout p {
     font-size: 18px;
   }
-
   .imgdiv img {
     width: 140px;
   }
-
   .langimg img {
     width: 50px;
     height: 50px;
@@ -331,19 +325,17 @@ main {
   padding-bottom: 80px;
 }
 
-/* כותרת אחידה לכל החלקים */
+/* כותרת אחידה */
 .gallerytitle {
   text-align: center;
   margin: 120px 0 40px 0;
 }
-
 .gallerytitle h2,
 .gallerytitle p {
   font-size: 40pt;
   font-weight: 700;
   color: honeydew;
 }
-
 .gallerytitle p {
   color: rgb(0, 160, 160);
   font-size: 30pt;
@@ -370,7 +362,6 @@ main {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project img {
   width: 100%;
   height: 180px;
@@ -379,18 +370,15 @@ main {
   opacity: 0.95;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
 }
-
 .project h5 {
   font-size: 18pt;
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 300;
 }
-
 .project p {
-  font-size: 13pt;
+  font-size: 12pt;
   line-height: 1.4;
 }
-
 .project a {
   display: flex;
   align-items: center;
@@ -405,11 +393,9 @@ main {
   margin: 15px auto;
   text-decoration: none;
   font-size: clamp(10pt, 2vw, 12pt);
-  font-weight: bold;
   transition: all 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
 .project a:hover {
   background-color: rgb(0, 160, 160);
   color: #d8d8d8;
@@ -422,30 +408,25 @@ main {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
     column-gap: 20px;
-    width: 100%; 
-    max-width: 100%; 
-    padding: 0 10px; 
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
     box-sizing: border-box;
   }
-
   .gallerytitle h2,
   .gallerytitle p {
     font-size: 28pt;
   }
-
   .project {
     height: auto;
     width: 100%;
   }
-
   .project h5 {
     font-size: 15pt;
   }
-
   .project p {
     font-size: 9pt;
   }
-
   .project a {
     font-size: 10pt;
     padding: 6px 0;
@@ -461,45 +442,38 @@ main {
   align-items: center;
   padding: 80px 20px;
 }
-
 .contacttitle {
   text-align: center;
   color: honeydew;
   font-size: 40pt;
   margin-bottom: 50px;
 }
-
 .contactBottom {
   display: flex;
   flex-direction: row;
   gap: 40px;
   align-items: center;
 }
-
 .contactImgDiv img {
   width: 400px;
   max-width: 90%;
 }
-
 #contact form {
   display: flex;
   flex-direction: column;
   width: 400px;
   max-width: 90%;
 }
-
 .form-control {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .form-control label {
   color: orange;
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
-
 .form-control input,
 .form-control textarea {
   font-size: 18px;
@@ -509,19 +483,16 @@ main {
   outline: none;
   font-family: "Poppins", sans-serif;
 }
-
 .form-control textarea {
   height: 150px;
   resize: none;
 }
-
 .form-control input[type="submit"] {
   background-color: orange;
   color: rgb(30, 30, 30);
   cursor: pointer;
   font-weight: bold;
 }
-
 .form-control input[type="submit"]:hover {
   background-color: rgb(0 160 160);
 }
@@ -532,102 +503,84 @@ main {
   justify-content: center;
   gap: 15px;
   margin: 30px 0;
-  flex-wrap: wrap; /* שלא ימתח את הכפתורים */
+  flex-wrap: wrap;
 }
-
 .contact-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 55px;
   height: 55px;
-  border-radius: 50%; /* עגול תמיד */
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.05);
   text-decoration: none;
   color: #fff;
   font-size: 1.4rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  flex-shrink: 0; /* שלא יימתח */
+  flex-shrink: 0;
 }
-
 .contact-btn i {
   font-size: 1.6rem;
 }
-
 .contact-btn.whatsapp {
-  background-color: #25D366;
+  background-color: #25d366;
 }
-
 .contact-btn.email {
   background-color: #e41352;
 }
-
 .contact-btn.linkedin {
   background-color: #0a66c2;
 }
-
 .contact-btn:hover {
   transform: scale(1.1);
   opacity: 0.9;
 }
-
 
 @media (max-width: 576px) {
   #contact {
     padding: 50px 10px;
     gap: 12px;
   }
-
   .contacttitle {
     font-size: 28pt;
     margin-bottom: 30px;
   }
-
   .contactBottom {
     flex-direction: column;
     gap: 20px;
   }
-
   .contactImgDiv img {
     width: 250px;
     max-width: 80%;
   }
-
   #contact form {
     width: 300px;
     max-width: 90%;
   }
-
   .form-control label {
     font-size: 1rem;
   }
-
   .form-control input,
   .form-control textarea {
     font-size: 16px;
     padding: 8px;
   }
-
   .form-control textarea {
     height: 100px;
   }
-
   .form-control input[type="submit"] {
     height: 40px;
     font-size: 14px;
   }
-
   .contact-links {
     flex-direction: column;
     gap: 10px;
   }
-
-   .contact-btn {
+  .contact-btn {
     width: 50px;
     height: 50px;
   }
-
   .contact-btn i {
     font-size: 1.4rem;
   }
@@ -643,16 +596,13 @@ footer {
   font-size: 1rem;
   position: relative;
 }
-
 footer .footerbox {
   font-size: 1.1rem;
 }
-
 footer .footerbox span {
   color: rgb(0, 160, 160);
   font-weight: bold;
 }
-
 @media (max-width: 576px) {
   footer {
     font-size: 0.9rem;
