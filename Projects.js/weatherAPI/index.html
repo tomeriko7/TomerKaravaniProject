@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&display=swap"
-    rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Gemstones&family=Silkscreen:wght@400;700&display=swap"
-    rel="stylesheet">
-
-
-  <title>Weather API</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
 
   <div class="container">
-    <h1>Weather API</h1>
-    <div class="form-control">
+    <h1>Weather Dashboard</h1>
+
+    <form class="form-control" id="weatherForm">
       <label for="inputCity">Enter City</label>
       <input type="text" id="inputCity" placeholder="Jerusalem" autofocus />
-      <button>Search</button>
-    </div>
+      <button type="submit">Search</button>
+    </form>
+
     <p id="errorMessage"></p>
-    <div id="weatherInfo">
-      <img />
+
+    <div id="weatherInfo" class="hidden">
+      <img id="weatherIcon" alt="Weather Icon"/>
       <div id="cityDetailsDiv">
         <h2 id="city"></h2>
         <p id="temp"></p>
@@ -40,9 +29,17 @@
       </div>
     </div>
 
+    <div id="historyContainer">
+      <h3>Search History</h3>
+      <div id="history"></div>
+    </div>
+
+    <div id="chartContainer">
+      <h3>5-Day Temperature Forecast</h3>
+      <canvas id="tempChart"></canvas>
+    </div>
   </div>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
