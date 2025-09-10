@@ -361,6 +361,8 @@ main {
   flex-direction: column;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+  
 }
 .project img {
   width: 100%;
@@ -378,6 +380,7 @@ main {
 .project p {
   font-size: 12pt;
   line-height: 1.4;
+  padding: 0 5px;
 }
 .project a {
   display: flex;
@@ -574,7 +577,7 @@ main {
     font-size: 14px;
   }
   .contact-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
   .contact-btn {
