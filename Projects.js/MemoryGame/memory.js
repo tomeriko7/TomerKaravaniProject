@@ -6,13 +6,14 @@ const arrColors = ["pink", "burlywood", "cadetblue", "darkseagreen", "darksalmon
 const doubledColors = [...arrColors, ...arrColors];
 const startGame = document.getElementById('start-game');
 const openInstructions = document.getElementById('openInstructions')
+const closeInstructions = document.getElementById('closeInstructions'); // כפתור ✖
 
 const button = document.querySelector('button');
 startGame.addEventListener("click", assignColorsToPairs);
 
 instructionsButton.addEventListener("click", () => instructions.style.display = 'none')
 openInstructions.addEventListener("click", () => instructions.style.display = 'block')
-
+closeInstructions.addEventListener("click" , ()=> instructions.style.display = 'none' )
 
 let colorMatch = false;
 let pairsMatched = 0;

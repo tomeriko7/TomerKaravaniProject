@@ -7,6 +7,7 @@ const instructions = document.getElementById('instructions');
 const gameStatus= document.getElementById('gameStatus');
 instructionsButton.addEventListener("click", () => instructions.style.display = 'none')
 openInstructions.addEventListener("click", () => instructions.style.display = 'block')
+const closeInstructionsBtn = document.getElementById('closeInstructions');
 
 //פונקציה שמשתמשת בלוקל סטורג כדי שאם המשחק יתחיל שוב אז הודעת ההוראות לא תקפוץ שוב
 instructionsButton.addEventListener('click', () =>{
@@ -18,6 +19,13 @@ instructionsButton.addEventListener('click', () =>{
 } else {
     instructions.style.display = 'block'; // מציג את ההוראות בפעם הראשונה
 }
+
+
+closeInstructionsBtn.addEventListener('click', () => {
+    instructions.style.display = 'none';
+    localStorage.setItem('instructionsShown', 'true'); // אותו לוגיקה כמו הכפתור I UNDERSTAND
+});
+
 
 
 function gameOverNote(){           // הצכת הודעה אם השחקן הפסיד  

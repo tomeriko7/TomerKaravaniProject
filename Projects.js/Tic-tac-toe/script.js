@@ -8,11 +8,22 @@ let gameOver = false;
 let message = document.querySelector('#message')
 let messageGO = document.querySelector('#messageGO')
 
+// --- הוראות ---
 const instructions = document.getElementById('instructions');
 const instructionsButton = document.getElementById('instructionsButton');
-instructionsButton.addEventListener('click', () => instructions.style.display = 'none');
-const openInstructions = document.getElementById('openInstructions')
-openInstructions.addEventListener("click", () => instructions.style.display = 'block')
+const closeInstructions = document.getElementById('closeInstructions'); // כפתור ✖
+const openInstructions = document.getElementById('openInstructions');
+
+// פונקציה לסגירת ההוראות
+function hideInstructions() {
+    instructions.style.display = 'none';
+}
+
+// הצגת ההוראות
+openInstructions.addEventListener("click", () => instructions.style.display = 'block');
+instructionsButton.addEventListener('click', hideInstructions);
+closeInstructions.addEventListener('click', hideInstructions);
+
 
 function blinkMsg() {
     // פונקציה להבהוב הודעה

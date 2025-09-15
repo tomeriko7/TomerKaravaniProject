@@ -1,292 +1,280 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
-    font-family: "Kanit", sans-serif;
-    background: linear-gradient(to top, #000, #473f7d);
-    color: #e0e0e0;
-    height: 100vh;
-    border: 2px solid white;
-    border-radius: 20px;
+  font-family: "Kanit", sans-serif;
+  background: linear-gradient(to top, #000, #473f7d);
+  color: #e0e0e0;
+  height: 100vh;
+  border: 2px solid white;
+  border-radius: 20px;
 }
-
-
-
-
 
 h1 {
-    margin: 50px auto;
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(130, 126, 255), 0 0 20px rgb(130, 126, 255);
-    font-family: "Creepster";
+  margin: 50px auto;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(130, 126, 255), 0 0 20px rgb(130, 126, 255);
+  font-family: "Creepster";
 }
 
-
 #categoryDiv {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin: 20px;
 }
 
 .category-btn {
-    width: 120px;
-    height: 50px;
-    color: rgb(130, 126, 255);
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: rgb(227, 227, 227);
-    ;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 15px #958c8c;
-    transition: transform 0.3s, box-shadow 0.3s;
+  width: 120px;
+  height: 50px;
+  color: rgb(130, 126, 255);
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgb(227, 227, 227);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #958c8c;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .category-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgb(130, 126, 255), 0 0 60px rgb(130, 126, 255);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgb(130, 126, 255), 0 0 60px rgb(130, 126, 255);
 }
 
 #start-again {
-    margin: 0 auto;
-    display: flex;
-    display: none;
+  margin: 0 auto;
+  display: flex;
+  display: none;
 }
-
 
 #wordDisplay {
-    border: none;
-    background-color: transparent;
-    margin: 50px auto;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 2rem;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 700px;
-    letter-spacing: 5px;
-    color: #dcff35;
-    text-shadow: 0 0 10px #a2a2a2, 0 0 20px #534325;
+  border: none;
+  background-color: transparent;
+  margin: 50px auto;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 700px;
+  letter-spacing: 5px;
+  color: #dcff35;
+  text-shadow: 0 0 10px #a2a2a2, 0 0 20px #534325;
 }
-
 
 #gameOver {
-    text-align: center;
-    font-size: 4rem;
-    color: #c74f4f;
-    text-shadow: 0 0 10px #f00, 0 0 20px #000;
-    margin: 20px;
-    font-family: "Creepster";
-    display: none;
+  text-align: center;
+  font-size: 4rem;
+  color: #c74f4f;
+  text-shadow: 0 0 10px #f00, 0 0 20px #000;
+  margin: 20px;
+  font-family: "Creepster";
+  display: none;
 }
 
-
-
-
 #attempts {
-    margin: 50px auto;
-    height: 25px;
-    text-align: center;
-    width: 90%;
-    max-width: 330px;
-    background-color: #2220;
-    border-radius: 10px;
-    border: none;
-    color: #dcff35;
-    font-size: 20px;
+  margin: 50px auto;
+  height: 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 330px;
+  background-color: #2220;
+  border-radius: 10px;
+  border: none;
+  color: #dcff35;
+  font-size: 20px;
 }
 
 #mistakeImage {
-    margin: 10px auto;
-    height: 300px;
-    text-align: center;
-    background-color: transparent;
-    display: block;
-    width: 190px;
-    box-shadow: 0 0 15px #555;
-    border-radius: 20px;
-    border: 10px solid #dcff35;
-
+  margin: 10px auto;
+  height: 300px;
+  text-align: center;
+  background-color: transparent;
+  display: block;
+  width: 190px;
+  box-shadow: 0 0 15px #555;
+  border-radius: 20px;
+  border: 10px solid #dcff35;
 }
 
-
 #divKeyboard {
-    margin: 50px auto;
-    background-color: #7b7b7b;
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #444;
+  margin: 50px auto;
+  background-color: #7b7b7b;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #444;
 }
 
 button {
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 15px #555;
-    transition: transform 0.2s, box-shadow 0.3s;
-    font-family: "Kanit", sans-serif;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #555;
+  transition: transform 0.2s, box-shadow 0.3s;
+  font-family: "Kanit", sans-serif;
 }
 
 button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px #958c8c, 0 0 60px #958c8c;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #958c8c, 0 0 60px #958c8c;
 }
 
 button:disabled {
-    background-color: #444;
-    color: #777;
-    cursor: not-allowed;
-    box-shadow: none;
+  background-color: #444;
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 #instructions {
-    width: 50vw;
-    height: 800px;
-    background-color: rgb(58, 58, 58);
-    color: whitesmoke;
-    font-size: 17px;
-    text-align: justify;
-    align-content: center;
-    margin: 0 auto;
-    position: fixed;
-    top: 10%;
-    left: 27%;
-    font-family: "Protest Revolution", sans-serif;
-    border: 4px double #dcff35;
-    display: block;
-    padding: 20px;
-    overflow: scroll;
-
+  width: 50vw;
+  height: 800px;
+  background-color: rgb(58, 58, 58);
+  color: whitesmoke;
+  font-size: 17px;
+  text-align: justify;
+  align-content: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 10%;
+  left: 27%;
+  font-family: "Protest Revolution", sans-serif;
+  border: 4px double #dcff35;
+  display: block;
+  padding: 20px;
+  overflow: scroll;
 }
 
 #closeInstructions {
-    margin: 15px auto;
-    display: flex;
-    width: 150px;
-    height: 50px;
-    box-shadow: 2px 2px 2px whitesmoke;
-    color: rgb(58, 58, 58);
-    background-color: #dcff35;
-    border: 1px solid rgb(58, 58, 58);
-    font-family: "Protest Revolution", sans-serif;
-
+  margin: 15px auto;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  box-shadow: 2px 2px 2px whitesmoke;
+  color: rgb(58, 58, 58);
+  background-color: #dcff35;
+  border: 1px solid rgb(58, 58, 58);
+  font-family: "Protest Revolution", sans-serif;
 }
-
+#closeInstructions2 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
 #openInstructions {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #819b00;
-    color: rgb(58, 58, 58);
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "Protest Revolution", sans-serif;
-    border: 1px solid rgb(255, 246, 246);
-    border-radius: 20%;
-    cursor: pointer;
-    box-shadow: 0 0 10px #444;
-    transition: transform 0.2s, box-shadow 0.3s;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #819b00;
+  color: rgb(58, 58, 58);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Protest Revolution", sans-serif;
+  border: 1px solid rgb(255, 246, 246);
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #444;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
 #openInstructions:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #dcff35, 0 0 40px #dcff35;
-    background-color: #dcff35;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #dcff35, 0 0 40px #dcff35;
+  background-color: #dcff35;
 }
 
 @media (max-width: 576px) {
-    h1 {
-        font-size: 1.5rem;
-        margin: 10px auto;
-    }
+  h1 {
+    font-size: 1.5rem;
+    margin: 10px auto;
+  }
 
-    #categoryDiv {
-        gap: 30px;
-    }
+  #categoryDiv {
+    gap: 30px;
+  }
 
-    .category-btn {
-        width: 80px;
-        height: 40px;
-        font-size: 0.8rem;
-    }
+  .category-btn {
+    width: 80px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
 
-    #wordDisplay {
-        font-size: 1.2rem;
-        margin: 20px auto;
-        width: 80%;
-    }
+  #wordDisplay {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    width: 80%;
+  }
 
+  #attempts {
+    font-size: 16px;
+  }
 
-    #attempts {
-        font-size: 16px;
-    }
+  #mistakeImage {
+    width: 120px;
+    height: 200px;
+  }
 
-    #mistakeImage {
-        width: 120px;
-        height: 200px;
-    }
+  #divKeyboard {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+  }
 
-    #divKeyboard {
-        width: 100%;
-        max-width: 400px;
-        padding: 10px;
-        margin: 10px auto;
-    }
+  button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
 
-    button {
-        width: 35px;
-        height: 35px;
-        font-size: 0.9rem;
-    }
+  #gameOver {
+    font-size: 1.5rem;
+  }
 
-    #gameOver {
-        font-size: 1.5rem;
-    }
+  #instructions {
+    width: 85vw;
+    overflow: scroll;
+    left: 3%;
+    top: 5%;
+    height: 600px;
+  }
 
-    #instructions {
-        width: 85vw;
-        overflow: scroll;
-        left: 3%;
-        top: 5%;
-        height: 600px;
-    }
+  #closeInstructions {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
 
-    #closeInstructions {
-        width: 100px;
-        height: 30px;
-        font-size: 12px;
-
-    }
-
-    #openInstructions {
-        width: 60px;
-        height: 60px;
-        font-size: 10px;
-    }
+  #openInstructions {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
 }

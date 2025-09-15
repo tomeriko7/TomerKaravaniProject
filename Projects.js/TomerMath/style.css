@@ -1,196 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    background-image: url(images/mathGameImg.png);
-    background-size: cover;
-    text-align: center;
-    color: white;
-    height: 100vh;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-image: url(images/mathGameImg.png);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  height: 100vh;
 }
 
 h1 {
-    color: #ff4081;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: "Rubik Gemstones"
+  color: #ff4081;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "Rubik Gemstones";
 }
 
 #container {
-    max-width: 800px;
-    margin: 300px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    height: 600px;
-
+  max-width: 800px;
+  margin: 50px auto; /* במקום 300px – מתאים לכל מסך */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  min-height: 70vh; /* גובה דינמי לפי גודל המסך */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ממרכז את כל התוכן אנכית */
+  align-items: center;
 }
 
 button {
-    background-color: #6200ea;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    margin: 10px 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Rubik Gemstones"
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Rubik Gemstones";
 }
 
 button:hover {
-    background-color: #3700b3;
+  background-color: #3700b3;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 #sum {
-    width: 100px;
-    padding: 10px;
-    font-size: 35px;
-    text-align: center;
-    border: 5px solid #df5785;
-    border-radius: 5px;
-    margin: 10px 0;
-    font-family: "Bungee Spice", sans-serif;
+  width: 100px;
+  padding: 10px;
+  font-size: 35px;
+  text-align: center;
+  border: 5px solid #df5785;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: "Bungee Spice", sans-serif;
 }
 
 .exRow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    margin: 20px 0;
-    direction: ltr;
-    gap: 25px;
-    font-family: "Bungee Spice", sans-serif;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin: 20px 0;
+  direction: ltr;
+  gap: 25px;
+  font-family: "Bungee Spice", sans-serif;
 }
 
 #message {
-    font-size: 28px;
-    margin-top: 20px;
-    font-family: "Rubik Gemstones";
-    color: white;
+  font-size: 28px;
+  margin-top: 20px;
+  font-family: "Rubik Gemstones";
+  color: white;
 }
 
 #next {
-    background-color: #00a292;
-    transition: background-color 0.3s ease;
+  background-color: #00a292;
+  transition: background-color 0.3s ease;
 }
 
 #next:hover {
-    background-color: #018786;
+  background-color: #018786;
 }
-
-
 
 #instructions {
-    width: 45vw;
-    height: 50vh;
-    background-color: #ff4081;
-    color: whitesmoke;
-    font-size: 1.2em;
-    text-align: center;
-    align-content: center;
-    margin: 0 auto;
-    position: fixed;
-    top: 20%;
-    left: 26%;
-    font-family: "Fredoka", sans-serif;
-    border: 4px solid #6200ea;
-    display: block;
-    padding: 20px;
-    border-radius: 40px;
-
+  width: 45vw;
+  max-width: 600px; /* למנוע התרחבות מוגזמת */
+  height: auto; /* גובה דינמי לפי התוכן */
+  max-height: 80vh; /* לא יחרוג מגובה המסך */
+  background-color: #ff4081;
+  color: whitesmoke;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* תמיד במרכז המסך */
+  font-family: "Fredoka", sans-serif;
+  border: 4px solid #6200ea;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  overflow-y: auto; /* מאפשר גלילה בתוך החלון אם התוכן ארוך */
+  z-index: 1000;
 }
 
+
+
 #instructionsButton {
-    margin: 15px auto;
-    display: flex;
-    width: 150px;
-    height: 50px;
-    box-shadow: 2px 2px 2px whitesmoke;
-    color: whitesmoke;
-    /* background-color: #6200ea;
+  margin: 15px auto;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  box-shadow: 2px 2px 2px whitesmoke;
+  color: whitesmoke;
+  /* background-color: #6200ea;
     border: 3px double rgb(58, 58, 58);
     font-family: "Rubik Gemstones"; */
 
-    box-shadow: 2px 2px 2px rgb(58, 58, 58);
-    color: whitesmoke;
-    background-color: rgb(102, 102, 102);
-    border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(58, 58, 58);
+  color: whitesmoke;
+  background-color: rgb(102, 102, 102);
+  border-radius: 15px;
 }
 
 #instructionsButton:active {
-
-
-    box-shadow: 2px 2px 2px whitesmoke;
-    color: whitesmoke;
-    background-color: #6200ea;
-    border: 3px double rgb(58, 58, 58);
-
+  box-shadow: 2px 2px 2px whitesmoke;
+  color: whitesmoke;
+  background-color: #6200ea;
+  border: 3px double rgb(58, 58, 58);
 }
 
 #instructions h2 {
-    font-family: "Rubik Gemstones";
+  font-family: "Rubik Gemstones";
 }
 
 #score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 #score p {
-    margin: 0;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    color: #ff4081;
-    font-family: "Fredoka", sans-serif;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #ff4081;
+  font-family: "Fredoka", sans-serif;
 }
 
 @media (max-width: 600px) {
-    h1 {
-        font-size: 28px;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
-    button {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
+  button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
 
-    .exRow {
-        font-size: 30px;
-    }
+  .exRow {
+    font-size: 30px;
+  }
 
-    #container {
-        margin: 100px auto;
-        height: 665px;
-    }
+  #container {
+    margin: 20px auto;
+    min-height: 75vh; /* מתאים למסכים קטנים יותר */
+  }
+  #sum {
+    width: 100px;
+    font-size: 30px;
+  }
 
-    #sum {
-        width: 100px;
-        font-size: 30px;
-    }
+  #instructions {
+    width: 90vw;
+    max-width: none;
+    padding: 30px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+  }
 
-    #instructions {
-        top: 12%;
-        width: 400px;
-        height: 700px;
-        left: 7%;
-
-    }
+  #closeInstructions {
+    top: 10px;
+    left: 10px;
+    font-size: 26px;
+  }
 }
